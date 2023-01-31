@@ -16,33 +16,29 @@
 <body>
   <header>
    
- 
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
- 
-   <div class="container-fluid">
-      <a class="navbar-brand" href="#">Restaurante</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-      </button>
-     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-         <ul class="navbar-nav">
-         <li class="nav-item">
-             <a class="nav-link active" aria-current="page" href="<?php echo base_url()?>C_inicio">Inicio</a>
-         </li>
-        
-       
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Menu de Comida
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Tienda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="<?php echo base_url()?>C_inicio">Inicio</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Menu Comida
           </a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_comida">Comidas</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_bebida">Bebidas</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_postre">Postres</a></li>
           </ul>
-         </li>
-         <li class="nav-item dropdown">
+        </li>
+        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
            Administrador
           </a>
@@ -52,27 +48,30 @@
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_postres">Cargar Postres</a></li>
           </ul>
          </li>
-        </div>
-    
+      </ul>
 
-     
-     <div class="collapse navbar-collapse " id="navbarNavDropdown">
 
-         <ul class="navbar-nav  ">
-            <li class="nav-item">
-                 <a class="nav-link active " aria-current="page" href="<?php echo base_url()?>C_registro">Registrarse</a>
-            </li>
-            <li class="nav-item ">
-                 <a class="nav-link active" href="<?php echo base_url()?>C_login">Iniciar</a>
-            </li>
-          </ul>
-
-      </div>
-
+      <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+        <a class="nav-link active " aria-current="page" href="<?php echo base_url()?>C_registro">Registrarse</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link active" href="<?php echo base_url()?>C_login">Iniciar</a>
+        </li>
+        
+        
+      </ul>
+      
     </div>
+  </div>
+</nav>
 
-  </nav>
-  
 
+
+
+
+
+   
+ 
 </header>
 
