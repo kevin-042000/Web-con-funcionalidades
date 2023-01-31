@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://localhost/Primera-web/Primera-Web/Tienda/';
+$config['base_url'] = 'https://localhost/Primera-web/Primera-Web/Tienda/index.php/';
 
 /*
 |--------------------------------------------------------------------------

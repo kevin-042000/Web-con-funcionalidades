@@ -1,6 +1,6 @@
   <footer>
     <div class="container-fluid mt-3">
-      <div class="row p-5 pb-2 bg-secondary text-white">
+      <div class="row p-5 pb-2 bg-dark text-white">
 
       <div class="col-xs-12 col-md-6 col-lg-3">
       <p class="h3">contactos</p>
@@ -39,6 +39,9 @@
     </div>
 
   </footer>
+
+  <script src="../public/js/script.js">
+  </script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
