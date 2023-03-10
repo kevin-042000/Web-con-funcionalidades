@@ -10,12 +10,12 @@
         Datos de la Bebida
     </div>
     <div class="card-body">
-      <form action="#" method="post" enctype="multipart/form-data">
+      <form action="<?php echo base_url()?>C_c_bebidas/save"  method="post" enctype="multipart/form-data">
         Nombre: <input class="form-control" type="text" name="nombre" id="">
         <br/>
-        Marca: <input class="form-control" type="text" name="nombre" id="">
+        Marca: <input class="form-control" type="text" name="marca" id="">
         <br/>
-        Precio: <input class="form-control" type="text" name="nombre" id="">
+        Precio: <input class="form-control" type="text" name="precio" id="">
         <br/>
         Imagen de la Bebida: <input class="form-control" type="file" name="imagen" id="">
         <br/>

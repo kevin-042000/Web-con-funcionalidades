@@ -22,4 +22,11 @@ class C_c_comidas extends CI_Controller {
 	{
 		$this->load->view('cargar_comidas');
 	}
+
+	public function save()
+	{
+		$this->load->model("Modelo_Guardar_Menu");
+		$this->Modelo_Guardar_Menu->Guardar_Comida($this->input->post());
+
+	}
 }

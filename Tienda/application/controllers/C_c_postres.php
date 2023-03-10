@@ -23,4 +23,11 @@ class C_c_postres extends CI_Controller {
 	{
 		$this->load->view('cargar_postres');
 	}
+
+	public function save()
+	{
+		$this->load->model("Modelo_Guardar_Menu");
+		$this->Modelo_Guardar_Menu->Guardar_Postre($this->input->post());
+
+	}
 }

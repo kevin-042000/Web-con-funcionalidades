@@ -22,4 +22,11 @@ class C_registro extends CI_Controller {
 	{
 		$this->load->view('registro');
 	}
+
+	public function save()
+	{
+		$this->load->model("Usuarios");
+		$this->Usuarios->Registrar_usuarios($this->input->post());
+
+	}
 }

@@ -10,10 +10,10 @@
         Datos del Postre
     </div>
     <div class="card-body">
-      <form action="#" method="post" enctype="multipart/form-data">
+      <form action="<?php echo base_url()?>C_c_postres/save" method="POST" enctype="multipart/form-data">
         Nombre: <input class="form-control" type="text" name="nombre" id="">
         <br/>
-        Precio: <input class="form-control" type="text" name="nombre" id="">
+        Precio: <input class="form-control" type="text" name="precio" id="">
         <br/>
         Imagen del Postre: <input class="form-control" type="file" name="imagen" id="">
         <br/>
@@ -42,11 +42,11 @@
         </thead>
         <tbody>
             <tr >
-                <td>lalala</td>
-                <td>lalaal</td>
-                <td>lalaal</td>
-                <td>ñalala</td>
-                <td>añña</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
                 <td><a class="btn btn-danger">Eliminar</a></td>
                 
                 

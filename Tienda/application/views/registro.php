@@ -14,7 +14,7 @@
                         Registro
                     </div>
                     <div class="card-body">
-                    <form action="" name="F_R" onsubmit="registrarse()">
+                    <form action="<?php echo base_url()?>C_registro/save" method="post" >
                     Usuario: <input class="form-control" type="text" name="Nombre">
                     <div id="error_nombre"></div>
                     <br/>

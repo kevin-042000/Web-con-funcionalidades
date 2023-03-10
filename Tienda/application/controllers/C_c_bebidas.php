@@ -22,4 +22,11 @@ class C_c_bebidas extends CI_Controller {
 	{
 		$this->load->view('cargar_bebidas');
 	}
+
+	public function save()
+	{
+		$this->load->model("Modelo_Guardar_Menu");
+		$this->Modelo_Guardar_Menu->Guardar_Bebida($this->input->post());
+
+	}
 }

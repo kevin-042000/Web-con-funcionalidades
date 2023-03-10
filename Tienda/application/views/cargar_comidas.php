@@ -11,7 +11,7 @@
         Datos de la Comida
     </div>
     <div class="card-body">
-      <form action="#" method="post" enctype="multipart/form-data">
+      <form action="<?php echo base_url()?>C_c_comidas/save"  method="post" enctype="multipart/form-data">
         Nombre: <input class="form-control" type="text" name="nombre" id="">
         <br/>
         Precio: <input class="form-control" type="text" name="precio" id="">
