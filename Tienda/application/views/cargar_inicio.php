@@ -8,21 +8,23 @@
         <div class="col-md-6">
         <div class="card">
     <div class="card-header">
-        Datos de la Comida
+        Guardar Noticias de Inicio
     </div>
     <div class="card-body">
-      <form action="<?php echo base_url()?>C_c_comidas/save"  method="post" enctype="multipart/form-data">
-        Nombre: <input class="form-control" type="text" name="nombre" id="">
+      <form action="<?php echo base_url()?>C_c_inicio/save"  method="post" enctype="multipart/form-data">
+        Titulo: <input class="form-control" type="text" name="titulo" id="">
         <br/>
-        Precio: <input class="form-control" type="text" name="precio" id="">
+        Subtitulo: <input class="form-control" type="text" name="subtitulo" id="">
         <br/>
-        Imagen de la Comida: <input class="form-control" type="file" name="imagen" id="">
+        Imagen: <input class="form-control" type="file" name="imagen" id="">
         <br/>
-        <label>Descripcion:</label>
-        <textarea class="form-control" name="descripcion" rows="3"></textarea>
+        <label>Parrafo</label>
+        <textarea class="form-control" name="parrafo" rows="3"></textarea>
         <br/>
         <input class="btn btn-success" type="submit" value="Guardar Datos">
       </form>
+
+
 
     </div>
 </div>
@@ -34,24 +36,24 @@
         <thead>
             <tr>
                 <th >ID</th>
-                <th >Nombre</th>
-                <th >Precio</th>
+                <th >Titulo</th>
+                <th >Subtitulo</th>
                 <th >Imagen</th>
-                <th >Descripcion</th>
+                <th >Parrafo</th>
                 <th >Accion</th>
             </tr>
         </thead>
-        <?php foreach ($lista as $key => $comidas) {
+        <?php foreach ($noticias as $key => $noticia) {
             
             ?>
 
         <tbody>
             <tr >
-                <td><?php echo $comidas["ID_comidas"] ?></td>
-                <td><?php echo $comidas["C_nombre"] ?></td>
-                <td><?php echo $comidas["C_precio"] ?></td>
+                <td><?php echo $noticia["ID_inicio"] ?></td>
+                <td><?php echo $noticia["I_titulo"] ?></td>
+                <td><?php echo $noticia["I_subtitulo"] ?></td>
                 <td>-</td>
-                <td><?php echo $comidas["C_descripcion"] ?></td>
+                <td><?php echo $noticia["I_parrafo"] ?></td>
                 
                 <td><a class="btn btn-danger">Eliminar</a></td>
                 

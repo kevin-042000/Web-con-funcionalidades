@@ -29,6 +29,17 @@ class Modelo_Guardar_Menu extends CI_Model{
         $this->db->insert("bebidas", $data);
     }
 
+    public function Guardar_Inicio($datos){
+        $data = array(
+            "I_titulo" => $datos["titulo"],
+            "I_subtitulo" => $datos["subtitulo"],
+            "I_parrafo" => $datos["parrafo"],
+            // "I_imagen" => $datos["imagen"],
+        );
+        $this->db->insert("inicio", $data);
+    }
+
+
 
 
 }

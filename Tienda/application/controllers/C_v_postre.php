@@ -22,7 +22,7 @@ class C_v_postre extends CI_Controller {
 	{
 		$this->load->model("Modelo_Mostrar_Menu");
 		$postres = $this->Modelo_Mostrar_Menu->Mostrar_Postres();
-		$this->load->view('v_postre', array("lista"=>$postres, "Postre"=>"Titulo"));
+		$this->load->view('v_postre', array("lista"=>$postres));
 		
 	}
 }

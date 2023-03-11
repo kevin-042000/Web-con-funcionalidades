@@ -1,7 +1,8 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class C_inicio extends CI_Controller {
+class C_c_inicio extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -22,7 +23,13 @@ class C_inicio extends CI_Controller {
 	{
 		$this->load->model("Modelo_Mostrar_Menu");
 		$inicio = $this->Modelo_Mostrar_Menu->Mostrar_Noticia();
-		$this->load->view('inicio', array("noticias"=>$inicio));
-		
+		$this->load->view('cargar_inicio', array("noticias"=>$inicio));
+	}
+
+	public function save()
+	{
+		$this->load->model("Modelo_Guardar_Menu");
+		$this->Modelo_Guardar_Menu->Guardar_Inicio($this->input->post());
+
 	}
 }

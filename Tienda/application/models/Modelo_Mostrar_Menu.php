@@ -21,5 +21,12 @@ public function Mostrar_Bebidas(){
     $consulta = $this->db->get();
     return $consulta->result_array();
 }
+
+public function Mostrar_Noticia(){
+    $this->db->select("*");
+    $this->db->from("inicio");
+    $consulta = $this->db->get();
+    return $consulta->result_array();
+}
 }
 ?>

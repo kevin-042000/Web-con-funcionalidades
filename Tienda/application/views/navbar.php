@@ -43,6 +43,7 @@
            Administrador
           </a>
           <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_inicio">Cargar Inicio</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_comidas">Cargar Comidas</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_bebidas">Cargar Bebidas</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_postres">Cargar Postres</a></li>
