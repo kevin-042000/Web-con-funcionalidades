@@ -20,8 +20,12 @@ class C_c_comidas extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('cargar_comidas');
+		$this->load->model("Modelo_Mostrar_Menu");
+		$comidas = $this->Modelo_Mostrar_Menu->Mostrar_Comidas();
+		$this->load->view('cargar_comidas', array("lista"=>$comidas));
 	}
+		
+	
 
 	public function save()
 	{

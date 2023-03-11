@@ -10,6 +10,7 @@
         Datos del Postre
     </div>
     <div class="card-body">
+
       <form action="<?php echo base_url()?>C_c_postres/save" method="POST" enctype="multipart/form-data">
         Nombre: <input class="form-control" type="text" name="nombre" id="">
         <br/>
@@ -22,6 +23,7 @@
         <br/>
         <input class="btn btn-success" type="submit" value="Guardar Datos">
       </form>
+
 
     </div>
 </div>
@@ -40,19 +42,27 @@
                 <th >Accion</th>
             </tr>
         </thead>
+
+        <?php foreach ($lista as $key => $postre) {
+            
+            ?>
+
         <tbody>
             <tr >
+                <td><?php echo $postre["ID_postres"] ?></td>
+                <td><?php echo $postre["P_nombre"] ?></td>
+                <td><?php echo $postre["P_precio"] ?></td>
                 <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
-                <td>-</td>
+                <td><?php echo $postre["P_descripcion"] ?></td>
+                
                 <td><a class="btn btn-danger">Eliminar</a></td>
                 
                 
             </tr>
-            
         </tbody>
+
+        <?php } ?>
+
     </table>
 </div>
         </div>

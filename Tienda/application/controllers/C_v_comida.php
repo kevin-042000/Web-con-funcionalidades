@@ -20,6 +20,9 @@ class C_v_comida extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('v_comida');
+		$this->load->model("Modelo_Mostrar_Menu");
+		$comidas = $this->Modelo_Mostrar_Menu->Mostrar_Comidas();
+		$this->load->view('v_comida', array("lista"=>$comidas));
+		
 	}
 }

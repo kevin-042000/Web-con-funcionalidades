@@ -21,7 +21,9 @@ class C_c_postres extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('cargar_postres');
+		$this->load->model("Modelo_Mostrar_Menu");
+		$postres = $this->Modelo_Mostrar_Menu->Mostrar_Postres();
+		$this->load->view('cargar_postres', array("lista"=>$postres));
 	}
 
 	public function save()

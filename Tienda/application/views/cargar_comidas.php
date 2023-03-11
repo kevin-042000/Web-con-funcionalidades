@@ -41,19 +41,25 @@
                 <th >Accion</th>
             </tr>
         </thead>
+        <?php foreach ($lista as $key => $comidas) {
+            
+            ?>
+
         <tbody>
             <tr >
-                <td>lalala</td>
-                <td>lalaal</td>
-                <td>ñalala</td>
-                <td>lalaal</td>
-                <td>añña</td>
+                <td><?php echo $comidas["ID_comidas"] ?></td>
+                <td><?php echo $comidas["C_nombre"] ?></td>
+                <td><?php echo $comidas["C_precio"] ?></td>
+                <td>-</td>
+                <td><?php echo $comidas["C_descripcion"] ?></td>
+                
                 <td><a class="btn btn-danger">Eliminar</a></td>
                 
                 
             </tr>
-            
         </tbody>
+
+        <?php } ?>
     </table>
 </div>
         </div>

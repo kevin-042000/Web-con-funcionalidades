@@ -20,6 +20,9 @@ class C_v_bebida extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('v_bebida');
+		$this->load->model("Modelo_Mostrar_Menu");
+		$bebidas = $this->Modelo_Mostrar_Menu->Mostrar_Bebidas();
+		$this->load->view('v_bebida', array("lista"=>$bebidas));
+		
 	}
 }
