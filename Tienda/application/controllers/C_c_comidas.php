@@ -31,6 +31,7 @@ class C_c_comidas extends CI_Controller {
 	{
 		$this->load->model("Modelo_Guardar_Menu");
 		$this->Modelo_Guardar_Menu->Guardar_Comida($this->input->post());
+		header('Location: https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_comidas ');
 
 	}
 }
