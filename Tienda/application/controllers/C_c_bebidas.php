@@ -30,7 +30,15 @@ class C_c_bebidas extends CI_Controller {
 	{
 		$this->load->model("Modelo_Guardar_Menu");
 		$this->Modelo_Guardar_Menu->Guardar_Bebida($this->input->post());
-		header('Location: https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_bebidas ');
+		header('Location: https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_bebidas');
+
+	}
+
+	public function eliminar($id)
+	{
+		$this->load->model("Modelo_eliminar");
+		$this->Modelo_eliminar->eliminar_bebida($id);
+		redirect('https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_bebidas ');	
 
 	}
 }

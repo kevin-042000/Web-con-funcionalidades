@@ -16,8 +16,7 @@
         <br/>
         Precio: <input class="form-control" type="text" name="precio" id="">
         <br/>
-        Imagen de la Comida: <input class="form-control" type="file" name="imagen" id="">
-        <br/>
+        
         <label>Descripcion:</label>
         <textarea class="form-control" name="descripcion" rows="3"></textarea>
         <br/>
@@ -36,7 +35,6 @@
                 <th >ID</th>
                 <th >Nombre</th>
                 <th >Precio</th>
-                <th >Imagen</th>
                 <th >Descripcion</th>
                 <th >Accion</th>
             </tr>
@@ -50,11 +48,11 @@
                 <td><?php echo $comidas["ID_comidas"] ?></td>
                 <td><?php echo $comidas["C_nombre"] ?></td>
                 <td><?php echo $comidas["C_precio"] ?></td>
-                <td>-</td>
                 <td><?php echo $comidas["C_descripcion"] ?></td>
                 
-                <td><a class="btn btn-danger">Eliminar</a></td>
-                
+       
+                 <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_comidas/eliminar/<?php echo $comidas["ID_comidas"]; ?>">Eliminar</a></th>
+         
                 
             </tr>
         </tbody>

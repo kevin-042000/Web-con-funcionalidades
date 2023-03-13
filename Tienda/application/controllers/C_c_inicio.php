@@ -32,10 +32,13 @@ class C_c_inicio extends CI_Controller {
 		$this->Modelo_Guardar_Menu->Guardar_Inicio($this->input->post());
 
 		header('Location: https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_inicio ');
+	}
 
-	
-
-		
+	public function eliminar($id)
+	{
+		$this->load->model("Modelo_eliminar");
+		$this->Modelo_eliminar->eliminar_noticia($id);
+		redirect('https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_inicio ');
 
 	}
 }

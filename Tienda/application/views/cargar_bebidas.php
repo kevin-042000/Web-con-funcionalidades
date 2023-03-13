@@ -13,11 +13,7 @@
       <form action="<?php echo base_url()?>C_c_bebidas/save"  method="post" enctype="multipart/form-data">
         Nombre: <input class="form-control" type="text" name="nombre" id="">
         <br/>
-        Marca: <input class="form-control" type="text" name="marca" id="">
-        <br/>
         Precio: <input class="form-control" type="text" name="precio" id="">
-        <br/>
-        Imagen de la Bebida: <input class="form-control" type="file" name="imagen" id="">
         <br/>
         <label>Descripcion</label>
         <textarea class="form-control" name="descripcion" rows="3"></textarea>
@@ -37,7 +33,6 @@
                 <th >ID</th>
                 <th >Nombre</th>
                 <th >Precio</th>
-                <th >Imagen</th>
                 <th >Descripcion</th>
                 <th >Accion</th>
             </tr>
@@ -51,10 +46,9 @@
                 <td><?php echo $bebida["ID_bebidas"] ?></td>
                 <td><?php echo $bebida["B_nombre"] ?></td>
                 <td><?php echo $bebida["B_precio"] ?></td>
-                <td>-</td>
                 <td><?php echo $bebida["B_descripcion"] ?></td>
                 
-                <td><a class="btn btn-danger">Eliminar</a></td>
+                <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_bebidas/eliminar/<?php echo  $bebida["ID_bebidas"] ; ?>">Eliminar</a></th>
                 
                 
             </tr>

@@ -33,4 +33,12 @@ class C_c_postres extends CI_Controller {
 		header('Location: https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_postres ');
 
 	}
+
+	public function eliminar($id)
+	{
+		$this->load->model("Modelo_eliminar");
+		$this->Modelo_eliminar->eliminar_postre($id);
+		redirect('https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_postres ');
+
+	}
 }

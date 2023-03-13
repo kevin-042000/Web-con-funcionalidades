@@ -27,6 +27,8 @@ class C_registro extends CI_Controller {
 	{
 		$this->load->model("Usuarios");
 		$this->Usuarios->Registrar_usuarios($this->input->post());
+		header('Location: https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_inicio');
+
 
 	}
 }

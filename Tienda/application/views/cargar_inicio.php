@@ -8,15 +8,13 @@
         <div class="col-md-6">
         <div class="card">
     <div class="card-header">
-        Guardar Noticias de Inicio
+        Guardar Noticia de Inicio
     </div>
     <div class="card-body">
       <form action="<?php echo base_url()?>C_c_inicio/save"  method="post" enctype="multipart/form-data">
         Titulo: <input class="form-control" type="text" name="titulo" id="">
         <br/>
         Subtitulo: <input class="form-control" type="text" name="subtitulo" id="">
-        <br/>
-        Imagen: <input class="form-control" type="file" name="imagen" id="">
         <br/>
         <label>Parrafo</label>
         <textarea class="form-control" name="parrafo" rows="3"></textarea>
@@ -38,7 +36,6 @@
                 <th >ID</th>
                 <th >Titulo</th>
                 <th >Subtitulo</th>
-                <th >Imagen</th>
                 <th >Parrafo</th>
                 <th >Accion</th>
             </tr>
@@ -52,10 +49,9 @@
                 <td><?php echo $noticia["ID_inicio"] ?></td>
                 <td><?php echo $noticia["I_titulo"] ?></td>
                 <td><?php echo $noticia["I_subtitulo"] ?></td>
-                <td>-</td>
                 <td><?php echo $noticia["I_parrafo"] ?></td>
                 
-                <td><a class="btn btn-danger">Eliminar</a></td>
+                <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_inicio/eliminar/<?php echo  $noticia["ID_inicio"]  ; ?>">Eliminar</a></th>
                 
                 
             </tr>

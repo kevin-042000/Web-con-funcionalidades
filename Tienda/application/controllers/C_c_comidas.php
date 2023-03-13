@@ -34,4 +34,15 @@ class C_c_comidas extends CI_Controller {
 		header('Location: https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_comidas ');
 
 	}
+
+	public function eliminar($id)
+	{
+		$this->load->model("Modelo_eliminar");
+		$this->Modelo_eliminar->eliminar_comida($id);
+		redirect('https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_comidas ');
+	
+		
+		
+
+	}
 }

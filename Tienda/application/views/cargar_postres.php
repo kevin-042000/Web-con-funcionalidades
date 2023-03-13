@@ -16,8 +16,7 @@
         <br/>
         Precio: <input class="form-control" type="text" name="precio" id="">
         <br/>
-        Imagen del Postre: <input class="form-control" type="file" name="imagen" id="">
-        <br/>
+       
         <label>Descripcion</label>
         <textarea class="form-control" name="descripcion" rows="3"></textarea>
         <br/>
@@ -37,7 +36,6 @@
                 <th >ID</th>
                 <th >Nombre</th>
                 <th >Precio</th>
-                <th >Imagen</th>
                 <th >Descripcion</th>
                 <th >Accion</th>
             </tr>
@@ -52,10 +50,10 @@
                 <td><?php echo $postre["ID_postres"] ?></td>
                 <td><?php echo $postre["P_nombre"] ?></td>
                 <td><?php echo $postre["P_precio"] ?></td>
-                <td>-</td>
+    
                 <td><?php echo $postre["P_descripcion"] ?></td>
                 
-                <td><a class="btn btn-danger">Eliminar</a></td>
+                <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_postres/eliminar/<?php echo $postre["ID_postres"] ; ?>">Eliminar</a></th>
                 
                 
             </tr>
