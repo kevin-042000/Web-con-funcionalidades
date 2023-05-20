@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
-/* .reg_ini{
-    justify-content: space-between;
-} */
+/* Estilos para el footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer p {
+    text-align: center;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+   
+  }
+

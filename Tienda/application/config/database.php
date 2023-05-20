@@ -75,11 +75,11 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'tienda_web',
-	'dbdriver' => 'mysqli',
+    'hostname' => 'localhost',
+    'username' => 'Kevin',
+    'password' => 'Restaurante01@',
+    'database' => 'id20785093_restaurante',
+    'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
