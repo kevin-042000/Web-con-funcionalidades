@@ -20,7 +20,7 @@
           </a>
         </div>
         <div class="d-inline-block mx-2">
-          <a href="https://github.com/kevin-042000" style="text-decoration: none;">
+          <a href="https://www.linkedin.com/in/kevin-aranda-249429201/" style="text-decoration: none;">
             <i class="bi bi-linkedin"></i>
             Puedes visitar mi Linkedin
           </a>
