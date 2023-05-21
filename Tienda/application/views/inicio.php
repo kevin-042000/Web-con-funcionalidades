@@ -5,7 +5,7 @@
   <main>
   <div class="container mt-3 mb-3">
 
-  <section class="container">
+  <section class="container mt-3">
   <div class="card my-1 bg-light">
     <div class="card-header text-center">
       <h5 class="card-title">Bienvenidos</h5>
