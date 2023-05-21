@@ -51,7 +51,7 @@
                 <td><?php echo $noticia["I_subtitulo"] ?></td>
                 <td><?php echo $noticia["I_parrafo"] ?></td>
                 
-                <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_noticias/eliminar/<?php echo  $noticia["ID_inicio"]  ; ?>">Eliminar</a></th>
+                <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_inicio/eliminar/<?php echo  $noticia["ID_inicio"]  ; ?>">Eliminar</a></th>
                 
                 
             </tr>
@@ -65,8 +65,5 @@
     </div>
 </div>
 
-<?php include ("footer.php") ?> 
-
-
-
+<?php include ("footer.php") ?>
 

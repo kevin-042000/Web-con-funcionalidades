@@ -67,8 +67,3 @@
 
 <?php include ("footer.php") ?>
 
-
-
-
-
-
