@@ -31,7 +31,7 @@ class C_c_comidas extends CI_Controller {
 	{
 		$this->load->model("Modelo_Guardar_Menu");
 		$this->Modelo_Guardar_Menu->Guardar_Comida($this->input->post());
-		header('Location: https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_comidas ');
+		header('Location: https://veracious-plating.000webhostapp.com/index.php/C_c_comidas ');
 
 	}
 
@@ -39,7 +39,7 @@ class C_c_comidas extends CI_Controller {
 	{
 		$this->load->model("Modelo_eliminar");
 		$this->Modelo_eliminar->eliminar_comida($id);
-		redirect('https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_comidas ');
+		redirect('https://veracious-plating.000webhostapp.com/index.php/C_c_comidas ');
 	
 		
 		

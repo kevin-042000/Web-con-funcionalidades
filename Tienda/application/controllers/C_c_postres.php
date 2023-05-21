@@ -30,7 +30,7 @@ class C_c_postres extends CI_Controller {
 	{
 		$this->load->model("Modelo_Guardar_Menu");
 		$this->Modelo_Guardar_Menu->Guardar_Postre($this->input->post());
-		header('Location: https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_postres ');
+		header('Location: https://veracious-plating.000webhostapp.com/index.php/C_c_postres ');
 
 	}
 
@@ -38,7 +38,7 @@ class C_c_postres extends CI_Controller {
 	{
 		$this->load->model("Modelo_eliminar");
 		$this->Modelo_eliminar->eliminar_postre($id);
-		redirect('https://localhost/Primera_web/Primera-Web/Tienda/index.php/C_c_postres ');
+		redirect('https://veracious-plating.000webhostapp.com/index.php/C_c_postres ');
 
 	}
 }

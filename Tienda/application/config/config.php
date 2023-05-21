@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'https://veracious-plating.000webhostapp.com/Tienda/index.php/';
+$config['base_url'] = 'https://veracious-plating.000webhostapp.com/index.php/';
 
 /*
 |--------------------------------------------------------------------------
