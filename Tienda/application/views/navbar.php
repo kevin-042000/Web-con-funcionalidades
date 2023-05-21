@@ -1,10 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>Web</title>
+  <title>Restaurante-Menu-Web</title>
+  <link rel="icon" href="https://i.pinimg.com/564x/0e/ed/22/0eed22b77375a894d7d195c90be7a8d6.jpg" type="image/jpeg">
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+
 
 
   <!-- Bootstrap CSS v5.2.1 -->
@@ -48,7 +52,7 @@
            Administrador
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_inicio">Cargar Inicio</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_inicio">Cargar Noticia</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_comidas">Cargar Comidas</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_bebidas">Cargar Bebidas</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_postres">Cargar Postres</a></li>

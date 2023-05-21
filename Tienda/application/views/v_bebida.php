@@ -24,7 +24,7 @@
 
 
   <div class="card col-md-6">
-    <img class="card-img-top" src="holder.js/100x180/" alt="Imagen">
+    
     <div class="card-body">
       <h4 class="card-title"><?php echo $bebida["B_nombre"]; ?></h4>
       <p class="card-text">Marca: <?php echo $bebida["B_marca"]; ?></p>
