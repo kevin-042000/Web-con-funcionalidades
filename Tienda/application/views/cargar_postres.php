@@ -11,7 +11,7 @@
     </div>
     <div class="card-body">
 
-      <form action="<?php echo base_url()?>C_c_postres/save" method="POST" enctype="multipart/form-data">
+      <form action="<?php echo base_url()?>C_c_postre/save" method="POST" enctype="multipart/form-data">
         Nombre: <input class="form-control" type="text" name="nombre" id="">
         <br/>
         Precio: <input class="form-control" type="text" name="precio" id="">
@@ -53,7 +53,7 @@
     
                 <td><?php echo $postre["P_descripcion"] ?></td>
                 
-                <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_postres/eliminar/<?php echo $postre["ID_postres"] ; ?>">Eliminar</a></th>
+                <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_postre/eliminar/<?php echo $postre["ID_postres"] ; ?>">Eliminar</a></th>
                 
                 
             </tr>

@@ -55,7 +55,7 @@
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_noticias">Cargar Noticia</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_comidas">Cargar Comidas</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_bebidas">Cargar Bebidas</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_postres">Cargar Postres</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_postre">Cargar Postres</a></li>
           </ul>
          </li>
       </ul>

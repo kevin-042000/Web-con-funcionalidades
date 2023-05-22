@@ -26,11 +26,13 @@ class C_c_bebidas extends CI_Controller {
 		
 	}
 
+	
 	public function save()
 	{
 		$this->load->model("Modelo_Guardar_Menu");
-		$this->Modelo_Guardar_Menu->Guardar_Bebida($this->input->post());
+		$this->Modelo_Guardar_Menu->Guardar_bebida($this->input->post());
 		header('Location: https://veracious-plating.000webhostapp.com/index.php/C_c_bebidas');
+		
 
 	}
 
@@ -39,6 +41,7 @@ class C_c_bebidas extends CI_Controller {
 		$this->load->model("Modelo_eliminar");
 		$this->Modelo_eliminar->eliminar_bebida($id);
 		redirect('https://veracious-plating.000webhostapp.com/index.php/C_c_bebidas ');	
+		
 
 	}
 }

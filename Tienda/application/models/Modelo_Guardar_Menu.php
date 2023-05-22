@@ -19,25 +19,17 @@ class Modelo_Guardar_Menu extends CI_Model{
         $this->db->insert("comidas", $data);
     }
 
-    // public function Guardar_Bebida($datos){
-    //     $data = array(
-    //         "B_nombre" => $datos["nombre"],
-    //         "B_marca" => $datos["marca"],
-    //         "B_precio" => $datos["precio"],
-    //         "B_descripcion" => $datos["descripcion"],
-    //     );
-    //     $this->db->insert("bebidas", $data);
-    // }
 
-    public function Guardar_Bebida($datos){
+    public function Guardar_bebida($datos){
         $data = array(
-            "B_nombre" => $datos["nombre"],
-            "B_marca" => $datos["marca"],
-            "B_precio" => $datos["precio"],
-            "B_descripcion" => $datos["descripcion"],
-        );
+                    "B_nombre" => $datos["nombre"],
+                    "B_marca" => $datos["marca"],
+                    "B_precio" => $datos["precio"],
+                    "B_descripcion" => $datos["descripcion"],
+                );
         $this->db->insert("bebidas", $data);
     }
+
     
 
     public function Guardar_Inicio($datos){

@@ -2,7 +2,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class C_c_postres extends CI_Controller {
+class C_c_postre extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -30,7 +30,8 @@ class C_c_postres extends CI_Controller {
 	{
 		$this->load->model("Modelo_Guardar_Menu");
 		$this->Modelo_Guardar_Menu->Guardar_Postre($this->input->post());
-		header('Location: https://veracious-plating.000webhostapp.com/index.php/C_c_postres ');
+		header('Location: https://veracious-plating.000webhostapp.com/index.php/C_c_postre/ ');
+
 
 	}
 
@@ -38,7 +39,6 @@ class C_c_postres extends CI_Controller {
 	{
 		$this->load->model("Modelo_eliminar");
 		$this->Modelo_eliminar->eliminar_postre($id);
-		redirect('https://veracious-plating.000webhostapp.com/index.php/C_c_postres ');
-
+		redirect('https://veracious-plating.000webhostapp.com/index.php/C_c_postre  ');
 	}
 }
