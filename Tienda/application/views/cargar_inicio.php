@@ -11,7 +11,7 @@
         Guardar Noticia de Inicio
     </div>
     <div class="card-body">
-      <form action="<?php echo base_url()?>C_c_inicio/save"  method="post" enctype="multipart/form-data">
+      <form action="<?php echo base_url()?>C_c_noticias/save"  method="post" enctype="multipart/form-data">
         Titulo: <input class="form-control" type="text" name="titulo" id="">
         <br/>
         Subtitulo: <input class="form-control" type="text" name="subtitulo" id="">
@@ -51,7 +51,7 @@
                 <td><?php echo $noticia["I_subtitulo"] ?></td>
                 <td><?php echo $noticia["I_parrafo"] ?></td>
                 
-                <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_inicio/eliminar/<?php echo  $noticia["ID_inicio"]  ; ?>">Eliminar</a></th>
+                <th><a class="btn btn-danger" href="<?php echo base_url() ?>C_c_noticias/eliminar/<?php echo  $noticia["ID_inicio"]  ; ?>">Eliminar</a></th>
                 
                 
             </tr>

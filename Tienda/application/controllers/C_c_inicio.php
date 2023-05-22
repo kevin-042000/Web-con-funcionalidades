@@ -19,26 +19,26 @@ class C_c_inicio extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/userguide3/general/urls.html
 	 */
-	public function index()
-	{
-		$this->load->model("Modelo_Mostrar_Menu");
-		$inicio = $this->Modelo_Mostrar_Menu->Mostrar_Noticia();
-		$this->load->view('cargar_inicio', array("noticias"=>$inicio));
-	}
+// 	public function index()
+// 	{
+// 		$this->load->model("Modelo_Mostrar_Menu");
+// 		$inicio = $this->Modelo_Mostrar_Menu->Mostrar_Noticia();
+// 		$this->load->view('cargar_inicio', array("noticias"=>$inicio));
+// 	}
 
-	public function save()
-	{
-		$this->load->model("Modelo_Guardar_Menu");
-		$this->Modelo_Guardar_Menu->Guardar_Inicio($this->input->post());
+// 	public function save()
+// 	{
+// 		$this->load->model("Modelo_Guardar_Menu");
+// 		$this->Modelo_Guardar_Menu->Guardar_Inicio($this->input->post());
 
-		header('Location: https://veracious-plating.000webhostapp.com/index.php/C_c_inicio ');
-	}
+// 		header('Location: https://veracious-plating.000webhostapp.com/index.php/C_c_inicio ');
+// 	}
 
-	public function eliminar($id)
-	{
-		$this->load->model("Modelo_eliminar");
-		$this->Modelo_eliminar->eliminar_noticia($id);
-		redirect('https://veracious-plating.000webhostapp.com/index.php/C_c_inicio ');
+// 	public function eliminar($id)
+// 	{
+// 		$this->load->model("Modelo_eliminar");
+// 		$this->Modelo_eliminar->eliminar_noticia($id);
+// 		redirect('https://veracious-plating.000webhostapp.com/index.php/C_c_inicio ');
 
-	}
-}
+// 	}
+// }
