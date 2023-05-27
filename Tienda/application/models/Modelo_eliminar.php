@@ -24,6 +24,12 @@ class Modelo_eliminar extends CI_Model{
         
     }
 
+    public function eliminar_Tragos($id_tragos) {
+        $this->db->where("ID_trago",$id_tragos);
+        $this->db->delete("tragos");
+    }
+
+
    
 
 

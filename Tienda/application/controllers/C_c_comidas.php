@@ -40,9 +40,6 @@ class C_c_comidas extends CI_Controller {
 		$this->load->model("Modelo_eliminar");
 		$this->Modelo_eliminar->eliminar_comida($id);
 		redirect('https://veracious-plating.000webhostapp.com/index.php/C_c_comidas ');
-	
-		
-		
 
 	}
 }

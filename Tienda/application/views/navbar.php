@@ -43,8 +43,8 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_comida">Comidas</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_bebida">Bebidas</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_postre">Postres</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url()?>">Bebidas</a></li>                      
+            <li><a class="dropdown-item" href="<?php echo base_url()?>">Postres</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -54,8 +54,8 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_noticias">Cargar Noticia</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_comidas">Cargar Comidas</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_bebidas">Cargar Bebidas</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_postre">Cargar Postres</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url()?>">Cargar Bebidas</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url()?>">Cargar Postres</a></li>
           </ul>
          </li>
       </ul>
