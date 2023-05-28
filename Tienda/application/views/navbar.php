@@ -9,8 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   
 
-
-
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -18,14 +16,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
 
-
-
-
 </head>
+
 <body>
+
   <header>
    
-
  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Restaurante</a>
@@ -43,7 +39,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_comida">Comidas</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url()?>">Bebidas</a></li>                      
+            <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_bebida">Bebidas</a></li>                      
             <li><a class="dropdown-item" href="<?php echo base_url()?>">Postres</a></li>
           </ul>
         </li>
@@ -54,7 +50,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_noticias">Cargar Noticia</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_comidas">Cargar Comidas</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url()?>">Cargar Bebidas</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_bebidas">Cargar Bebidas</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>">Cargar Postres</a></li>
           </ul>
          </li>

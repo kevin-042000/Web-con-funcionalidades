@@ -22,6 +22,7 @@ public function Mostrar_Bebidas(){
     return $consulta->result_array();
 }
 
+
 public function Mostrar_Noticia(){
     $this->db->select("*");
     $this->db->from("inicio");

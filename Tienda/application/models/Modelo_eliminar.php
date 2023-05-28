@@ -9,8 +9,9 @@ class Modelo_eliminar extends CI_Model{
     public function eliminar_bebida($id_bebida) {
         $this->db->where("ID_bebidas",$id_bebida);
         $this->db->delete("bebidas");
-        
     }
+
+ 
 
     public function eliminar_postre($id_postre) {
         $this->db->where("ID_postres",$id_postre);

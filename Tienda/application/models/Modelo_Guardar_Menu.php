@@ -10,6 +10,15 @@ class Modelo_Guardar_Menu extends CI_Model{
         $this->db->insert("postres", $data);
     }
 
+    public function Insertar_bebidas($datos){
+        $data = array(
+            "B_nombre" => $datos["nombre"],
+            "B_precio" => $datos["precio"],
+            "B_descripcion" => $datos["descripcion"],
+        );
+        $this->db->insert("bebidas", $data);
+    }
+
     public function Guardar_Comida($datos){
         $data = array(
             "C_nombre" => $datos["nombre"],
@@ -19,16 +28,6 @@ class Modelo_Guardar_Menu extends CI_Model{
         $this->db->insert("comidas", $data);
     }
 
-
-    public function Guardar_bebida($datos){
-        $data = array(
-                    "B_nombre" => $datos["nombre"],
-                    "B_marca" => $datos["marca"],
-                    "B_precio" => $datos["precio"],
-                    "B_descripcion" => $datos["descripcion"],
-                );
-        $this->db->insert("bebidas", $data);
-    }
 
     
 
