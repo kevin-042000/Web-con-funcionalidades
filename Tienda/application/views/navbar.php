@@ -15,6 +15,13 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    <style>
+      img{
+        width: 2rem ;
+        height: 2rem ;
+        margin-left: 1rem;
+      }
+    </style>
 
 </head>
 
@@ -38,9 +45,9 @@
             Menu Comida
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_comida">Comidas</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_bebida">Bebidas</a></li>                      
-            <li><a class="dropdown-item" href="<?php echo base_url()?>">Postres</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_comida">Comidas <img class="icono-comida" src="../public/iconos/hamburguesa.png" alt="hamburguesa"></a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_bebida">Bebidas <img class="icono-comida" src="../public/iconos/bebidas-sin-alcohol.png" alt="bebida"></a></li>                      
+            <li><a class="dropdown-item" href="<?php echo base_url()?>C_v_postre">Postres <img src="../public/iconos/postre.png" alt="postre"></a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
@@ -51,7 +58,7 @@
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_noticias">Cargar Noticia</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_comidas">Cargar Comidas</a></li>
             <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_bebidas">Cargar Bebidas</a></li>
-            <li><a class="dropdown-item" href="<?php echo base_url()?>">Cargar Postres</a></li>
+            <li><a class="dropdown-item" href="<?php echo base_url()?>C_c_postres">Cargar Postres</a></li>
           </ul>
          </li>
       </ul>
