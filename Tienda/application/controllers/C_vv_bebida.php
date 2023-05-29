@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class C_v_bebida extends CI_Controller {
+class C_vv_bebida extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
