@@ -14,7 +14,7 @@
 
   <div class="row">
     <?php foreach ($lista as $key => $postre) { ?>
-      <div class="col-md-6">
+      <div class="col-md-6 mb-3">
         <div class="card">
           <div class="card-header bg-light">
             <h4 class="card-title text-center"><?php echo $postre["P_nombre"]; ?></h4>

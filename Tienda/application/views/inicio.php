@@ -20,7 +20,7 @@
       <div class="col-md-8 mb-3">
         <div class="card">
           <div class="card-header bg-light">
-            <h2 class="card-title text-center "><?php echo $noticia["I_titulo"]; ?></h2>
+            <h2 class="card-title text-center h3"><?php echo $noticia["I_titulo"]; ?></h2>
           </div>
           <div class="card-body">
             <h3 class="card-text text-center"><?php echo $noticia["I_subtitulo"]; ?></h3>
